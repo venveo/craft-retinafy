@@ -126,7 +126,8 @@ class Retinafy extends Component
         // If original width is bigger than the 2x size for the specified transform, add the srcset.
         if ($originalWidth >= $transformWidth * 2)
         {
-            $markup .= '" srcset="' . $image->getUrl($params) . ' 2x';
+            $markup .= '" srcset="' . $image->getUrl($transform) . ' 1x, ';
+            $markup .= ''.$image->getUrl($params) . ' 2x';
         }
         return $markup;
     }
