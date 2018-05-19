@@ -1,0 +1,43 @@
+{
+    "name": "venveo/craft-retinafy",
+    "description": "A direct remake of the Craft Retinafy plugin for Craft 2.0 by markgoodyear. ",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "retinafy"
+    ],
+    "support": {
+        "docs": "https://github.com/venveo/craft-retinafy/blob/master/README.md",
+        "issues": "https://github.com/venveo/craft-retinafy/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Venveo",
+            "homepage": "https://venveo.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "venveo\\retinafy\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Retinafy",
+        "handle": "retinafy",
+        "hasCpSettings": true,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/venveo/retinafy/master/CHANGELOG.md",
+        "components": {
+            "retinafy": "venveo\\retinafy\\services\\Retinafy"
+        },
+        "class": "venveo\\retinafy\\Retinafy"
+    }
+}
