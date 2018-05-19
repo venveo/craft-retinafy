@@ -34,7 +34,7 @@
         "handle": "retinafy",
         "hasCpSettings": true,
         "hasCpSection": false,
-        "changelogUrl": "https://raw.githubusercontent.com/venveo/retinafy/master/CHANGELOG.md",
+        "changelogUrl": "https://raw.githubusercontent.com/venveo/craft-retinafy/master/CHANGELOG.md",
         "components": {
             "retinafy": "venveo\\retinafy\\services\\Retinafy"
         },

@@ -1,4 +1,7 @@
-# Retinafy plugin for Craft.
+# Retinafy plugin for Craft 3
+#### Note:
+This is a direct port from [markgoodyear's Craft Retinafy for Craft 2](https://github.com/markgoodyear/craft-retinafy) in order to help facilitate Craft 2 to Craft 3 migrations.
+
 
 Retinafy will only work on images with `@2x` in the filename. The `@2x` signifies its intended use.
 
@@ -8,7 +11,7 @@ By default, Retinafy generates the 1x version of the 2x version uploaded. The 1x
 
 ```html
 <img src="[generated_image_at_250x250].png"
-     srcset="[uploaded_image_at_500x500].png 2x">
+     srcset="[uploaded_image_at_250x250].png 1x, [uploaded_image_at_500x500].png 2x">
 ```
 
 ## Usage
